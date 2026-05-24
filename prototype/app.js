@@ -1,7 +1,4 @@
-/* =====================================================
-   AETHER — App JS
-   Navigation, pill toggles, player logic
-   ===================================================== */
+// Screen nav, tabs, mini player, track skip
 
 (function () {
   'use strict';
