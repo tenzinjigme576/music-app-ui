@@ -28,6 +28,12 @@ npx --yes serve prototype
 
 **Flows:** Tab bar switches main screens · Cards / tracks / mini player → Now Playing · Back chevron returns to previous screen.
 
+## Screenshots
+
+| Home | Profile | Now Playing |
+|------|---------|-------------|
+| ![Home screen](./screenshots/home.png) | ![Profile screen](./screenshots/profile.png) | ![Now Playing screen](./screenshots/now-playing.png) |
+
 ## Design system
 
 - **Font:** Plus Jakarta Sans (400 / 600 / 700 / 800)
@@ -37,8 +43,9 @@ npx --yes serve prototype
 ## Repo structure
 
 ```
-index.html     Project hub (links to prototype + Figma)
-prototype/     Interactive HTML prototype
+index.html       Project hub (links to prototype + Figma)
+prototype/       Interactive HTML prototype
+screenshots/     Static screen captures (Home, Profile, Now Playing)
 ```
 
 ## Status

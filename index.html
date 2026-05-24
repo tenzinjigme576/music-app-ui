@@ -26,7 +26,7 @@
         radial-gradient(ellipse 70% 50% at 15% 0%, rgba(139,92,246,.2), transparent),
         radial-gradient(ellipse 50% 40% at 90% 100%, rgba(6,182,212,.12), transparent);
     }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 64px 24px; }
     .badge {
       display: inline-block;
       font-size: 0.7rem;
@@ -73,6 +73,41 @@
       background: linear-gradient(135deg, rgba(139,92,246,.25), rgba(236,72,153,.15));
       border-color: rgba(139,92,246,.35);
     }
+    .shots { margin-top: 48px; }
+    .shots h2 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .shots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    figure.shot {
+      margin: 0;
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 20px;
+      padding: 12px;
+      overflow: hidden;
+    }
+    figure.shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    figure.shot figcaption {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+    }
     footer { margin-top: 48px; font-size: 0.8rem; color: var(--muted); }
     footer a { color: var(--cyan); }
   </style>
@@ -82,6 +117,24 @@
     <span class="badge">UI/UX Portfolio</span>
     <h1>Aether Music App UI</h1>
     <p class="sub">Mobile music streaming concept — dark mode, glassmorphism, neon accents. Plus Jakarta Sans · 390×844.</p>
+
+    <section class="shots" aria-label="App screenshots">
+      <h2>Screenshots</h2>
+      <div class="shots-grid">
+        <figure class="shot">
+          <img src="screenshots/home.png" alt="Aether Home screen — trending playlists and recently played" width="390" height="844" loading="lazy">
+          <figcaption>Home</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="screenshots/profile.png" alt="Aether Profile screen — stats and settings" width="390" height="844" loading="lazy">
+          <figcaption>Profile</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="screenshots/now-playing.png" alt="Aether Now Playing screen — full player" width="390" height="844" loading="lazy">
+          <figcaption>Now Playing</figcaption>
+        </figure>
+      </div>
+    </section>
 
     <div class="cards">
       <a class="card primary" href="prototype/index.html">
